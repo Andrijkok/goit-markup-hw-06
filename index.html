@@ -446,7 +446,7 @@
         </div>
         <div class="footer-form-wrapper">
           <p class="footer-form-titel">Підпишіться на розсилку</p>
-          <form class="footer-form js-speaker-form">
+          <form class="footer-form">
             <input type="email" name="user_email" class="footer-form-input" placeholder="E-mail" />
             <button type="submit" class="footer-form-submit">
               Підписатися
@@ -533,18 +533,5 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
-    <script>
-      (() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-        });
-      })();
-    </script>
   </body>
 </html>
-
-<!-- 
-  <div class="backdrop is-hidden" data-modal></div> -->
